@@ -1,0 +1,24 @@
+<web-app id="servlet-2_4" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" >
+
+    <servlet>
+        <servlet-name>Action</servlet-name>
+        <servlet-class>controllers.ActionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Action</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <!--  logging status messages servlet-->
+    <servlet>
+        <servlet-name>ViewStatusMessages</servlet-name>
+        <servlet-class>ch.qos.logback.classic.ViewStatusMessagesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewStatusMessages</servlet-name>
+        <url-pattern>/status-messages</url-pattern>
+    </servlet-mapping>
+
+</web-app>
